@@ -1,0 +1,45 @@
+{
+    "name": "bee-mail",
+    "version": "0.1.0",
+	"description": "bee mail plugin",
+    "keywords": ["bee plugin","mail"],
+    "main": "lib/index.js",
+    "bin": {
+    },
+    "engines": {
+        "node" : ">=0.8.0"
+    },
+	"author": "colorhook <colorhook@gmail.com>",
+	"maintainers": [{
+      "name": "colorhook",
+      "email": "colorhook@gmail.com",
+      "url": "http://github.com/colorhook"
+    }],
+	"bugs": {
+        "email": "colorhook@gmail.com",
+        "url": "http://github.com/colorhook/bee-mail/issues"
+    },
+
+    "dependencies": {
+    	"nodemailer": "~0.3.37"
+    },
+    "devDependencies":{
+        "mocha": "~1.7.4",
+        "should": "~1.2.2",
+        "bee": ""
+    },
+    "scripts":{
+        "test": "mocha --require should test --timeout 10000 --globals hasCert --ignore-leaks"
+    },
+    "homepage": "https://github.com/colorhook/bee-mail",
+    "repository" : {
+        "type" : "git",
+        "url" : "git://github.com/colorhook/bee-mail.git"
+    },
+	"licenses": [
+        {
+            "type": "MIT",
+            "url": "http://github.com/colorhook/bee-mail/blob/master/LICENSE"
+        }
+    ]
+}
